@@ -40,7 +40,3 @@ class InventoryMapping:
 
         for ingredient, quantity in recipe.items():
             self.inventory[ingredient] -= quantity
-
-
-inventory = InventoryMapping()
-print(inventory.check_recipe_availability(inventory.inventory))

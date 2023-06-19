@@ -38,6 +38,14 @@ class MenuBuilder:
         else:
             filtered_data = dish_data
 
+        available_dishes = []
+        for dish in filtered_data:
+            if self.inventory.check_recipe_availability(dish.recipe):
+                available_dishes.append(dish)
+
+        if not available_dishes:
+            return pd.DataFrame()
+
         dish_names = [dish.name for dish in filtered_data]
         ingredients = [Dish.get_ingredients(dish) for dish in filtered_data]
         prices = [dish.price for dish in filtered_data]
