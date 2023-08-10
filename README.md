@@ -16,7 +16,7 @@
   <div>
     <dl>
         <dt>Para acessar o projeto faça o clone do repositório.</dt>
-        <dd>No terminal utilize o comando: <code>git@github.com:JorgeCase/restaurant-orders.git</code></dd>
+        <dd>No terminal utilize o comando: <code>git clone git@github.com:JorgeCase/restaurant-orders.git</code></dd>
         <dd>Entre na pasta do repositório que você acabou de clonar: <code>cd restaurant-orders</code></dd>
         <dt>Crie um ambiente virtual para o projeto com o comando:</dt>
         <dd><code>python3 -m venv .venv && source .venv/bin/activate</code></dd>
